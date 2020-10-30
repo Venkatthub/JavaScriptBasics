@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find prime number</title>
+</head>
+
+<body>
+
+    <script>
+        function isPrime() {
+
+            var num = document.getElementById("123").value;
+
+            for (let i = 2; i <= num / 2; i++) {
+
+                if (num % i == 0) {
+
+                    document.getElementById("h1").innerHTML = "Not a prime number !";
+
+                    return;
+
+                }
+
+
+            }
+            document.getElementById("h1").innerHTML = "Prime Number";
+        }
+
+    </script>
+
+
+    Enter number <input id="123" type="number" required="required" />
+
+    <button onclick="isPrime()">Submit</button>
+
+    <h2 id="h1"></h2>
+
+</body>
+
+</html>
